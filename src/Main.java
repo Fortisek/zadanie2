@@ -1,18 +1,18 @@
+import obiekty.obiektA;
 public class Main {
-    public class klasa {
 
-        private  String imie;
+    public static void main(String[] args) {
+        obiektA obiektA = new obiektA("Jan", "Kowalski");
+        System.out.println(obiektA.getImie());
+        System.out.println(obiektA.getNazwisko());
 
-        private  String nazwisko;
-
-        public ObiektA(String imie, String nazwisko){
-            this.imie = imie;
-            this.nazwisko = nazwisko;
-        }
-
-        public String getImie(){
-            return imie;
-        }
-
+        obiektA.setImie("Piotr");
+        obiektA.setNazwisko("Nowak");
+        System.out.println(obiektA.getImie());
+        System.out.println(obiektA.getNazwisko());
     }
-}
+
+
+        }
+
+
